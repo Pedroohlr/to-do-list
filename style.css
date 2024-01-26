@@ -1,0 +1,68 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #7a7a7a;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header h1 {
+    color: #6a1b9a; /* Um tom escuro de roxo */
+    text-align: center;
+}
+
+#task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #b39ddb; /* Um tom claro de roxo */
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+#task-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #9c27b0; /* Um tom médio de roxo */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#task-form button:hover {
+    background-color: #7b1fa2; /* Um tom mais escuro de roxo para o hover */
+}
+
+#tasks-list {
+    list-style: none;
+    padding: 0;
+}
+
+#tasks-list li {
+    background: #ede7f6; /* Um tom muito claro de roxo, quase lavanda */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
