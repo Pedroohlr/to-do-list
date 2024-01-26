@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #7a7a7a;
+    background-color: #f3f3f3;
     color: #333;
     margin: 0;
     padding: 0;
@@ -13,39 +13,44 @@ body {
 }
 
 .container {
-    width: 80%;
-    max-width: 500px;
+    width: 90%;
+    max-width: 600px;
     background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 header h1 {
     color: #6a1b9a; /* Um tom escuro de roxo */
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
 }
 
 #task-form {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #task-form input[type="text"] {
     flex: 1;
-    padding: 10px;
-    border: 1px solid #b39ddb; /* Um tom claro de roxo */
-    border-radius: 4px;
-    margin-right: 5px;
+    padding: 15px;
+    border: 2px solid #b39ddb; /* Um tom claro de roxo */
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1em;
 }
 
 #task-form button {
-    padding: 10px 20px;
+    padding: 15px 25px;
     border: none;
     background-color: #9c27b0; /* Um tom médio de roxo */
     color: white;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
 }
 
 #task-form button:hover {
@@ -58,22 +63,47 @@ header h1 {
 }
 
 #tasks-list li {
-    background: #ede7f6; /* Um tom muito claro de roxo, quase lavanda */
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    background: #f4f4f4; /* Um tom neutro */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.done{
-    text-decoration: line-through;
-    background-color: #333;
-    margin: 0;
-}
-
-.dell{
-    background-color: red;
+.check-button, .dell {
+    padding: 10px 15px;
+    border: none;
     color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+    margin-left: 10px;
+    display: inline-block; /* Ou 'inline', dependendo de suas necessidades */
+    margin-right: 5px;
+}
+
+.check-button {
+    background-color: #4caf50; /* Verde */
+}
+
+.check-button:hover {
+    background-color: #388e3c; /* Verde escuro */
+}
+
+.dell {
+    background-color: #f44336; /* Vermelho */
+}
+
+.dell:hover {
+    background-color: #d32f2f; /* Vermelho escuro */
+}
+
+.done {
+    text-decoration: line-through;
+    background-color: #ccc;
+    color: #333;
 }
